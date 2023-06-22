@@ -1,0 +1,14 @@
+{
+    "extends": "webbylab",
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": [
+        "ava"
+    ],
+    "rules": {
+       "semi": [2, "never"]   // не использовать точки с запятой
+    }
+
+}

@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+    db:
+       container_name: pg_db
+       image: postgres:14
+       restart: always
+       environment:
+           POSTGRES_DB: "main"
+           POSTGRES_USER: "postgres"
+           POSTGRES_PASSWORD: "1234"
+       ports:
+           - "5433:5432"
+    test-db:
+        container_name: pg_db_test
+        image: postgres:14
+        restart: always
+        environment:
+            POSTGRES_DB: "test"
+            POSTGRES_USER: "postgres"
+            POSTGRES_PASSWORD: "1234"
+        ports:
+            - "5434:5432"
+    pgadmin4:
+        image: dpage/pgadmin4:latest
+        ports: ['8888:80']
+        environment:
+            PGADMIN_DEFAULT_EMAIL: noemail@noemail.ru
+            PGADMIN_DEFAULT_PASSWORD: 'root'
+        restart: always
+

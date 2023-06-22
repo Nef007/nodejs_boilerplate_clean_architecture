@@ -1,0 +1,6 @@
+{
+    "data": ["required", { "nested_object": {
+        "accessToken": ["required", "string"],
+        "refreshToken": ["required", "string"]
+    } }]
+}

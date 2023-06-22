@@ -1,0 +1,45 @@
+{
+    "data": [
+        "required",
+        {
+            "nested_object": {
+                "id": [
+                    "required",
+                    "uuid"
+                ],
+                "shortName": {
+                    "is": "voluptas"
+                },
+                "description": {
+                    "is": "eius"
+                },
+                "status": [
+                    "required",
+                    {
+                        "one_of": [
+                            "ACTIVE",
+                            "ARCHIVE",
+                            "PENDING"
+                        ]
+                    }
+                ],
+                "userId": [
+                    "required",
+                    "uuid"
+                ],
+                "createdAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                },
+                "updatedAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "data": [
+        "required",
+        {
+            "list_of_objects": {
+                "id": [
+                    "uuid"
+                ],
+                "shortName": [
+                    "required",
+                    "string",
+                    {
+                        "max_length": 255
+                    }
+                ],
+                "description": [
+                    "string",
+                    {
+                        "max_length": 255
+                    }
+                ],
+                "status": [
+                    "required",
+                    {
+                        "one_of": [
+                            "ACTIVE",
+                            "ARCHIVE",
+                            "PENDING"
+                        ]
+                    }
+                ],
+                "userId": [
+                    "required",
+                    "uuid"
+                ],
+                "createdAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                },
+                "updatedAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                }
+            }
+        }
+    ],
+    "meta": [
+        "required",
+        {
+            "nested_object": {
+                "totalCount": {
+                    "is": 1
+                },
+                "filteredCount": {
+                    "is": 1
+                },
+                "limit": {
+                    "is": 20
+                },
+                "offset": {
+                    "is": 0
+                }
+            }
+        }
+    ]
+}

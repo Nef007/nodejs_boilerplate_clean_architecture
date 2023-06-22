@@ -1,0 +1,40 @@
+{
+  "data": [
+    "required",
+    {
+      "nested_object": {
+        "id": [
+          "required",
+          "uuid"
+        ],
+        "email": {
+          "is": "deondre.hirthe@gmail.com"
+        },
+        "status": {
+          "is": "PENDING"
+        },
+        "firstName": {
+          "is": "consequatur"
+        },
+        "secondName": {
+          "is": "aut"
+        },
+        "patronymic": {
+          "is": "necessitatibus"
+        },
+        "createdAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        },
+        "updatedAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "data": [
+    "required",
+    {
+      "nested_object": {
+        "id": [
+          "required",
+          "uuid"
+        ],
+        "email": {
+          "is": "deangelo86@gmail.com"
+        },
+        "status": {
+          "is": "ACTIVE"
+        },
+        "firstName": {
+          "is": "dolor"
+        },
+        "secondName": {
+          "is": "explicabo"
+        },
+        "patronymic": {
+          "is": "qui"
+        },
+        "createdAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        },
+        "updatedAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        }
+      }
+    }
+  ]
+}
+
+

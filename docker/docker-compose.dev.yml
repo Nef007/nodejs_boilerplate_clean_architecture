@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+    backend:
+        build: ../
+        command: npm start
+        ports: ['8000:8000']
+        env_file: [ '../.env' ]
+        depends_on: ['db']
+        volumes: ['../:/app']
+        environment:
+            MODE: application
+            PORT: 8000
+            DB_HOST: db
+

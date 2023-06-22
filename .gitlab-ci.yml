@@ -1,0 +1,39 @@
+image: node:14
+
+services:
+  - mysql:8.0.19
+
+variables:
+  MYSQL_DATABASE: starterkit-test
+  MYSQL_ROOT_PASSWORD: mysql
+  TEST_DB_USERNAME: root
+  TEST_DB_PASSWORD: mysql
+  TEST_DB_HOST: mysql
+  TEST_DB_PORT: 3306
+  MODE: test
+
+lint:
+  stage: test
+  script:
+    - npm install
+    - npm run test:lint
+
+test-security:
+  stage: test
+  script:
+    - npm install
+    - npm run test:audit
+
+test-ava:
+  stage: test
+  script:
+    - npm install
+    - npm run migration:test
+    - npm run test:ava
+
+test-coverage:
+  stage: test
+  script:
+    - npm install
+    - npm run migration:test
+    - npm run test:coverage

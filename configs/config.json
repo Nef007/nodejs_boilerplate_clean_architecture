@@ -1,0 +1,29 @@
+{
+    "appPort": "{{PORT}}",
+    "mainUrl": "{{MAIN_URL}}",
+    "secret":  "{{SECRET}}",
+    "db" : {
+        "username": "{{DB_USERNAME}}",
+        "password": "{{DB_PASSWORD}}",
+        "database": "{{DB_DATABASE}}",
+        "dialect": "{{DB_DIALECT}}",
+        "host": "{{DB_HOST}}",
+        "port": "{{DB_PORT}}"
+    },
+    "test-db": {
+        "username": "{{TEST_DB_USERNAME}}",
+        "password": "{{TEST_DB_PASSWORD}}",
+        "database": "{{TEST_DB_DATABASE}}",
+        "dialect": "{{TEST_DB_DIALECT}}",
+        "host": "{{TEST_DB_HOST}}",
+        "port": "{{TEST_DB_PORT}}"
+    },
+    "defaultLang": "EN",
+    "jwt_secret": "{{JWT_SECRET}}",
+    "refresh_token_secret": "{{REFRESH_TOKEN_SECRET}}",
+    "cookie_secret": "{{COOKIE_SECRET}}",
+    "session_expiry": "{{SESSION_EXPIRY}}",
+    "refresh_token_expiry": "{{REFRESH_TOKEN_EXPIRY}}",
+    "whitelisted_domains": "{{WHITELISTED_DOMAINS}}",
+
+}

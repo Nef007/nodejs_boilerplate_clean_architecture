@@ -1,0 +1,41 @@
+{
+  "data": [
+    "required",
+    {
+      "nested_object": {
+        "id": [
+          "required",
+          "uuid"
+        ],
+        "email": {
+          "is": "miheev@hotmail.com"
+        },
+        "status": {
+          "is": "ACTIVE"
+        },
+        "firstName": {
+          "is": "Artem"
+        },
+        "secondName": {
+          "is": "Miheev"
+        },
+        "patronymic": {
+          "is": "Sergeevich"
+        },
+        "createdAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        },
+        "updatedAt": {
+          "iso_date": {
+            "min": "current",
+            "format": "datetime"
+          }
+        }
+      }
+    }
+  ]
+}
+

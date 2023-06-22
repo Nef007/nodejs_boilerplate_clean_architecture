@@ -1,0 +1,29 @@
+[
+    {
+        "email": "miheev@hotmail.com",
+        "status": "ACTIVE",
+        "firstName": "Artem",
+        "secondName": "Miheev",
+        "patronymic": "Sergeevich",
+        "password": "password",
+        "confirmPassword": "password"
+    },
+    {
+        "email": "hansolo@hotmail.com",
+        "status": "ACTIVE",
+        "firstName": "Han",
+        "secondName": "Solo",
+        "patronymic": "Georgey",
+        "password": "password",
+        "confirmPassword": "password"
+    },
+    {
+        "email": "Janie.Lubowitz@hotmail.com",
+        "status": "PENDING",
+        "firstName": "Hacker",
+        "secondName": "Hacker",
+        "patronymic": "Hacker",
+        "password": "password",
+        "confirmPassword": "password"
+    }
+]

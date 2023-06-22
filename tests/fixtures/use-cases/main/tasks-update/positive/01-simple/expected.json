@@ -1,0 +1,38 @@
+{
+    "data": [
+        "required",
+        {
+            "nested_object": {
+                "id": [
+                    "required",
+                    "uuid"
+                ],
+                "shortName": {
+                    "is": "assumenda"
+                },
+                "description": {
+                    "is": "qui"
+                },
+                "status": {
+                    "is": "ACTIVE"
+                },
+                "userId":[
+                    "required",
+                    "uuid"
+                ],
+                "createdAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                },
+                "updatedAt": {
+                    "iso_date": {
+                        "min": "current",
+                        "format": "datetime"
+                    }
+                }
+            }
+        }
+    ]
+}
